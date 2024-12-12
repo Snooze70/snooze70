@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply bg-white dark:bg-gray-100;
+
+  overflow-x: hidden;
+
+  @media (prefers-color-scheme: light) {
+    color-scheme: white;
+  }
+}
+
+@layer components {
+  .container-xs {
+    @apply w-full mx-auto max-w-[77.63rem];
+  }
+}
+
+footer p {
+  font-size: small;
+  padding-top: 1rem;
+}
+
+input {
+  color: black;
+}
